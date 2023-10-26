@@ -9,15 +9,15 @@ const WelcomePage = () => {
 
         {/* <Link to="/staffLogin">
             Staff Login
-        </Link>
-
-        <Link to="/login">
-            Customer Login
-        </Link>
-
-        <Link to="/register">
-            Customer Register
         </Link> */}
+
+        {/* <Link to="/login">
+            Customer Login
+        </Link> */}
+
+        <Link to="/customerRegister">
+            Customer Register
+        </Link>
     
     
     
