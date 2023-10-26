@@ -132,7 +132,7 @@ const CustomerRegister = () => {
               <br />
               <div className="reg_btns">
                 <button type="submit" className="splash_link login_btn">Register</button>
-                <Link to="/login" className="splash_link">Login</Link>
+                <Link to="/CustomerLogin" className="splash_link">Login</Link>
               </div>
             </form>
           )}
