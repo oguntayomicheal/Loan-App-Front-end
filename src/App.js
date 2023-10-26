@@ -6,6 +6,7 @@ import WelcomePage from './WelcomePage';
 import StaffLogin from './components/session/StaffLogin';
 import CustomerRegister from './components/session/CustomerRegister';
 import CustomerLogin from './components/session/CustomerLogin';
+import CustomerHomePage from './components/customer/HomePage';
 
 function App() {
   return (
@@ -15,6 +16,8 @@ function App() {
         <Route path="/customerRegister" element={<CustomerRegister />} />
         <Route path="/CustomerLogin" element={<CustomerLogin />} />
         <Route path="/staffLogin" element={<StaffLogin />} />
+      
+        <Route path="/CustomerHomePage" element={<CustomerHomePage />} />
       </Routes>
     </Router>
   );
