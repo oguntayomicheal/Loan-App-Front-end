@@ -43,7 +43,7 @@ const CustomerLogin = () => {
 
       if (response.ok) {
         const data = await response.json();
-        localStorage.setItem('userData', JSON.stringify(data));
+        localStorage.setItem('customerData', JSON.stringify(data));
         setLoginSuccess(true);
         // navigate('/homepage');
       } else {

@@ -7,14 +7,18 @@ const WelcomePage = () => {
             Loan App
         </h1>
 
-        {/* <Link to="/staffLogin">
+        <Link to="/staffLogin">
             Staff Login
-        </Link> */}
+        </Link>
+
+         <br />
 
         <Link to="/CustomerLogin">
             Customer Login
         </Link>
 
+        <br />
+        
         <Link to="/customerRegister">
             Customer Register
         </Link>
