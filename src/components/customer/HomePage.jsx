@@ -1,15 +1,13 @@
 import React from "react";
 import CustomerNavigation from "./Navigation";
-import LoanApplicationForm from "./ApplicationForm";
+import LoanApplicationForm from "./LoanApplicationForm";
 
 const CustomerHomePage = () => {
     
     
     return <>
-    <CustomerNavigation />
-
     CustomerHomePage
-
+    <br />
     <LoanApplicationForm />
     </>
 }

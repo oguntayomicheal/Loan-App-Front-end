@@ -1,12 +1,16 @@
 import React from "react";
-// import CustomerNavigation from "./Navigation";
+import { NavLink } from "react-router-dom";
+import CustomerNavigation from "./Navigation";
 
 const LoanStatus = () => {
     
     
     return <>
-    
-    
+  <NavLink to="/LoanApplicationForm" className="each_nav">
+        Application form
+      </NavLink>
+    <br />
+
     LoanStatus
     </>
 }

@@ -8,6 +8,9 @@ import CustomerRegister from './components/session/CustomerRegister';
 import CustomerLogin from './components/session/CustomerLogin';
 import CustomerHomePage from './components/customer/HomePage';
 
+import LoanApplicationForm from './components/customer/LoanApplicationForm';
+import LoanStatus from './components/customer/LoanStatus';
+
 function App() {
   return (
     <Router>
@@ -18,6 +21,13 @@ function App() {
         <Route path="/staffLogin" element={<StaffLogin />} />
       
         <Route path="/CustomerHomePage" element={<CustomerHomePage />} />
+  
+   <Route path="/LoanApplicationForm" element={<LoanApplicationForm />} />
+
+        <Route path="/LoanStatus" element={<LoanStatus />} />
+
+      
+      
       </Routes>
     </Router>
   );
