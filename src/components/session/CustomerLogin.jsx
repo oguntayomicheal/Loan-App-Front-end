@@ -14,7 +14,6 @@ const CustomerLogin = () => {
   const [loginFailure, setLoginFailure] = useState(false);
 
   const [loading, setLoading] = useState(false);
-  
 
   const navigate = useNavigate();
 
@@ -30,7 +29,7 @@ const CustomerLogin = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
-    setLoginFailure(false)
+    setLoginFailure(false);
 
     try {
       const response = await fetch(url, {
@@ -45,7 +44,7 @@ const CustomerLogin = () => {
         const data = await response.json();
         localStorage.setItem('customerData', JSON.stringify(data));
         setLoginSuccess(true);
-        // navigate('/homepage');
+        navigate('/');
       } else {
         setLoginFailure(true);
         setLoading(false);
@@ -100,12 +99,12 @@ const CustomerLogin = () => {
       </div>
       )}
 
-{loading && (
-        
-        <div className="loading-spinner">
-      <FaSpinner className="icon" />
-    </div>
-       
+      {loading && (
+
+      <div className="loading-spinner">
+        <FaSpinner className="icon" />
+      </div>
+
       )}
     </div>
 
