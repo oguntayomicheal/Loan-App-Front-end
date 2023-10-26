@@ -11,10 +11,10 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path='/' element={<WelcomePage />} />
-        <Route path='/customerRegister' element={<CustomerRegister />} />
-        <Route path='/CustomerLogin' element={<CustomerLogin />} />
-        <Route path='/staffLogin' element={<StaffLogin />} />
+        <Route path="/" element={<WelcomePage />} />
+        <Route path="/customerRegister" element={<CustomerRegister />} />
+        <Route path="/CustomerLogin" element={<CustomerLogin />} />
+        <Route path="/staffLogin" element={<StaffLogin />} />
       </Routes>
     </Router>
   );
