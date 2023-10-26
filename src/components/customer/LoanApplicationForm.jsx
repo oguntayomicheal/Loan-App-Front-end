@@ -1,18 +1,15 @@
-import React from "react";
-import { NavLink
- } from "react-router-dom";
-import CustomerNavigation from "./Navigation";
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 
-const LoanApplicationForm = () => {
-    
-    
-    return <>
- <NavLink to="/LoanStatus" className="each_nav">
-        Loan status
-      </NavLink>
-    
+const LoanApplicationForm = () => (
+  <>
+    <NavLink to="/LoanStatus" className="each_nav">
+      Loan status
+    </NavLink>
+
     LoanApplicationForm
-    </>
-}
+
+  </>
+);
 
 export default LoanApplicationForm;

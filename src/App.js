@@ -19,15 +19,13 @@ function App() {
         <Route path="/customerRegister" element={<CustomerRegister />} />
         <Route path="/CustomerLogin" element={<CustomerLogin />} />
         <Route path="/staffLogin" element={<StaffLogin />} />
-      
+
         <Route path="/CustomerHomePage" element={<CustomerHomePage />} />
-  
-   <Route path="/LoanApplicationForm" element={<LoanApplicationForm />} />
+
+        <Route path="/LoanApplicationForm" element={<LoanApplicationForm />} />
 
         <Route path="/LoanStatus" element={<LoanStatus />} />
 
-      
-      
       </Routes>
     </Router>
   );
