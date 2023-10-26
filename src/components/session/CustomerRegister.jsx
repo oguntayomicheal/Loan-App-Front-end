@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
+import { FaSpinner } from 'react-icons/fa';
+import '../../assets/styles/LoadingSpinner.css';
+
 const CustomerRegister = () => {
     const [formData, setFormData] = useState({
         name: '',
@@ -13,6 +16,8 @@ const CustomerRegister = () => {
       const [registrationFailure, setRegistrationFailure] = useState(false);
       const [errorData, setErrorData] = useState(null);
     
+      const [loading, setLoading] = useState(false);
+
       const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData((prevData) => ({
@@ -25,6 +30,8 @@ const CustomerRegister = () => {
 
       const handleSubmit = async (e) => {
         e.preventDefault();
+        setLoading(true);
+        setRegistrationFailure(false)
     
         try {
           const response = await fetch(url, {
@@ -37,10 +44,12 @@ const CustomerRegister = () => {
     
           if (response.ok) {
             setRegistrationSuccess(true);
+            setLoading(false);
           } else {
             const data = await response.json();
             setErrorData(data.errors);
             setRegistrationFailure(true);
+            setLoading(false);
           }
         } catch (error) {
         //   throw new Error(error);
@@ -53,7 +62,7 @@ const CustomerRegister = () => {
           {registrationSuccess ? (
             <div className="reg_success">
               <p>Registration successful! You can now log in.</p>
-              <Link to="/login" className="splash_link">Login</Link>
+              <Link to="/CustomerLogin" className="splash_link">Login</Link>
             </div>
           ) : (
             <form onSubmit={handleSubmit}>
@@ -129,6 +138,14 @@ const CustomerRegister = () => {
                   {errorData.password_confirmation[0]}
                 </p>
               )}
+
+{loading && (
+        
+        <div className="loading-spinner">
+      <FaSpinner className="icon" />
+    </div>
+       
+      )}
               <br />
               <div className="reg_btns">
                 <button type="submit" className="splash_link login_btn">Register</button>

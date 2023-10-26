@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 
+import { FaSpinner } from 'react-icons/fa';
+import '../../assets/styles/LoadingSpinner.css';
+
 const CustomerLogin = () => {
   const [formData, setFormData] = useState({
     email: '',
@@ -9,6 +12,9 @@ const CustomerLogin = () => {
 
   const [loginSuccess, setLoginSuccess] = useState(false);
   const [loginFailure, setLoginFailure] = useState(false);
+
+  const [loading, setLoading] = useState(false);
+  
 
   const navigate = useNavigate();
 
@@ -23,6 +29,8 @@ const CustomerLogin = () => {
   const url = 'http://127.0.0.1:3100/api/v1/customers/sign_in';
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
+    setLoginFailure(false)
 
     try {
       const response = await fetch(url, {
@@ -40,6 +48,7 @@ const CustomerLogin = () => {
         // navigate('/homepage');
       } else {
         setLoginFailure(true);
+        setLoading(false);
       }
     } catch (error) {
       throw new Error(error);
@@ -89,6 +98,14 @@ const CustomerLogin = () => {
       <div>
         <p className="login_error">Invalid email or password.</p>
       </div>
+      )}
+
+{loading && (
+        
+        <div className="loading-spinner">
+      <FaSpinner className="icon" />
+    </div>
+       
       )}
     </div>
 
