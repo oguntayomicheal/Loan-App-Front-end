@@ -18,10 +18,10 @@ const LoanApplicationForm = () => {
     purpose: '',
     repayment_preferences: '',
     customer_id: customerID,
-    status: 'nil',
-    details: 'nil',
-    repayment_schedule: 'nil',
-    amount_to_pay: 'nil'
+    status: 'Pending',
+    details: 'Nothing',
+    repayment_schedule: 'Nothing',
+    amount_to_pay: 'Nothing'
   });
 
   const handleInputChange = (event) => {
