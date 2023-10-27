@@ -74,7 +74,7 @@ const LoanApplicationForm = () => {
         <form onSubmit={handleSubmit}>
           <div className="form-group">
             <label htmlFor="loan_amount">
-              Loan Amount
+              Loan Amount ($$)
               <input
                 type="number"
                 id="loan_amount"
