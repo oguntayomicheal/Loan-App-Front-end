@@ -44,7 +44,7 @@ const CustomerLogin = () => {
         const data = await response.json();
         localStorage.setItem('customerData', JSON.stringify(data));
         setLoginSuccess(true);
-        navigate('/');
+        navigate('/CustomerHomePage');
       } else {
         setLoginFailure(true);
         setLoading(false);
