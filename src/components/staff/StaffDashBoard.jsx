@@ -24,12 +24,12 @@ const StaffDashBoard = () => {
     }
 
     return (
-        <div>
+        <div id='staffDashBoard'>
         Staff dashboard
         <h2>Loan Applications</h2>
-        <ul>
+        <ul id='allLoans'>
             {loanApplicationsList.map((eachLoan) => (
-                <li key={eachLoan.id} className=''>
+                <li key={eachLoan.id} className='eachLoan'>
                     <span>
                         <p>{eachLoan.customer_name}</p>
                         <p>{eachLoan.loan_amount}</p>
