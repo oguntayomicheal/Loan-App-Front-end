@@ -10,7 +10,7 @@ const LoanApplicationForm = () => {
   const [loading, setLoading] = useState(false);
   const [loadingFailure, setLoadingFailure] = useState(false);
 
-  const customerDetails = JSON.parse(localStorage.getItem('userData'));
+  const customerDetails = JSON.parse(localStorage.getItem('customerData'));
   const customerName = customerDetails.name;
   const customerID = customerDetails.id;
 
