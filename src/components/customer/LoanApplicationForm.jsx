@@ -11,17 +11,19 @@ const LoanApplicationForm = () => {
   const [loadingFailure, setLoadingFailure] = useState(false);
 
   const customerDetails = JSON.parse(localStorage.getItem('userData'));
+  const customerName = customerDetails.name;
   const customerID = customerDetails.id;
 
   const [formData, setFormData] = useState({
+    customer_name: customerName,
+    customer_id: customerID,
     loan_amount: '',
     purpose: '',
     repayment_preferences: '',
-    customer_id: customerID,
-    status: 'Pending',
-    details: 'Nothing',
-    repayment_schedule: 'Nothing',
-    amount_to_pay: 'Nothing'
+    status: 'IN progress',
+    details: 'Not updated yet',
+    repayment_schedule: 'Not updated yet',
+    amount_to_pay: 'Not updated yet'
   });
 
   const handleInputChange = (event) => {
