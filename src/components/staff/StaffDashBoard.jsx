@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import './StaffDashBoard.css'
 
 const StaffDashBoard = () => {
@@ -39,7 +40,10 @@ const StaffDashBoard = () => {
                         <p> {eachLoan.status}</p>
                     </span>
                     <span>
+                        <Link to={`/ReviewLoanApplication/${eachLoan.id}`}>
                         <button>Review</button>
+                        </Link>
+                       
                     </span>
                 </li>
             ))}

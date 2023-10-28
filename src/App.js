@@ -12,6 +12,7 @@ import LoanApplicationForm from './components/customer/LoanApplicationForm';
 import LoanStatus from './components/customer/LoanStatus';
 
 import StaffDashBoard from './components/staff/StaffDashBoard';
+import ReviewLoanApplication from './components/staff/ReviewLoanApplication';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Route path="/LoanStatus" element={<LoanStatus />} />
 
         <Route path="/StaffDashBoard" element={<StaffDashBoard />} />
+        <Route path="/ReviewLoanApplication/:id" element={<ReviewLoanApplication />} />
       </Routes>
     </Router>
   );
