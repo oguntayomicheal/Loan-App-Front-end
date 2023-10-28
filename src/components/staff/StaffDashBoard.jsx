@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './StaffDashBoard.css'
 
 const StaffDashBoard = () => {
     const [loanApplicationsList, setLoanApplicationList] = useState([]);
@@ -23,9 +24,27 @@ const StaffDashBoard = () => {
     }
 
     return (
-        <>
+        <div>
         Staff dashboard
-        </>
+        <h2>Loan Applications</h2>
+        <ul>
+            {loanApplicationsList.map((eachLoan) => (
+                <li key={eachLoan.id} className=''>
+                    <span>
+                        <p>{eachLoan.customer_name}</p>
+                        <p>{eachLoan.loan_amount}</p>
+                    </span>
+                    <span>
+                        <p>Status</p>
+                        <p> {eachLoan.status}</p>
+                    </span>
+                    <span>
+                        <button>Review</button>
+                    </span>
+                </li>
+            ))}
+        </ul>
+        </div>
     )
 } 
 
