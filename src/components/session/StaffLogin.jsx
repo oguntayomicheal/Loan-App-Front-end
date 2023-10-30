@@ -31,7 +31,7 @@ const StaffLogin = () => {
       if (response.ok) {
         const data = await response.json();
         localStorage.setItem('staffData', JSON.stringify(data));
-        navigate('/');
+        navigate('/StaffDashBoard');
       } else {
         setLoginFailure(true);
         setLoading(false);
