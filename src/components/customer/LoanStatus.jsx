@@ -7,7 +7,7 @@ const LoanStatus = () => {
   const customerId = (JSON.parse(customerData)).id;
 
   const loanUrl = `http://localhost:3100/api/v1/customers/${customerId}/loan_applications`;
-  console.log(loanUrl);
+
 
   const fetchloanApplicationsList = async () => {
     fetch(loanUrl).then((response) => {
@@ -46,9 +46,9 @@ const LoanStatus = () => {
                 </p>
               </span>
               <span>
-                {/* <Link to={`/ReviewLoanApplication/${eachLoan.id}`}>
-                  <button type="button">Review</button>
-                </Link> */}
+                <Link to={`/EachLoanStatus/${eachLoan.id}`}>
+                  <button type="button">View</button>
+                </Link>
 
               </span>
             </li>
