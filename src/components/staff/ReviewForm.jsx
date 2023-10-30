@@ -1,6 +1,12 @@
 import React, { useState } from 'react';
 
+import { FaSpinner } from 'react-icons/fa';
+import '../../assets/styles/LoadingSpinner.css';
+
 const ReviewForm = () => {
+    const [loading, setLoading] = useState(false);
+  const [loadingFailure, setLoadingFailure] = useState(false);
+
   const [formData, setFormData] = useState({
     status: '',
     details: '',
@@ -16,14 +22,31 @@ const ReviewForm = () => {
     });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    console.log(formData);
+  const handleReviewSubmit = (event) => {
+    event.preventDefault();
+    setLoading(true);
+    setLoadingFailure(false);
+    
   };
 
   return (
 
-    <form onSubmit={handleSubmit}>
+    <>
+       {loading && (
+
+<div className="loading-spinner">
+  <FaSpinner className="icon" />
+</div>
+
+)}
+
+{loadingFailure && (
+        <div>
+          <p className="login_error">Server error, kindly resubmit the review.</p>
+        </div>
+        )}
+
+            <form onSubmit={handleReviewSubmit}>
       <div className="form-group">
         <label htmlFor="status">
           Loan Status
@@ -91,7 +114,13 @@ const ReviewForm = () => {
         </label>
       </div>
       <button type="submit">Submit Review</button>
-    </form>
+         </form>
+
+      
+
+
+    </>
+
   );
 };
 

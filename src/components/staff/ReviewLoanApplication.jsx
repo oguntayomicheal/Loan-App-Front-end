@@ -30,6 +30,10 @@ const ReviewLoanApplication = () => {
     }
   };
 
+  // const handleReviewSubmit = (formData) => {
+  //   console.log(formData)
+  // }
+
   return (
     <div>
       {serverError ? (
