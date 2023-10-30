@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 
 import { FaSpinner } from 'react-icons/fa';
 import '../../assets/styles/LoadingSpinner.css';
@@ -137,3 +138,7 @@ const ReviewForm = ({ loanReviewUrl }) => {
 };
 
 export default ReviewForm;
+
+ReviewForm.propTypes = {
+  loanReviewUrl: PropTypes.string.isRequired,
+};
