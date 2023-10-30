@@ -7,8 +7,12 @@ const ReviewLoanApplication = () => {
   const [serverError, setServerError] = useState(false);
   // Use the useParams hook to get the loan loan_loan_id from the URL
   const { id } = useParams();
-  const url = `http://localhost:3100/api/v1/staffs/loan_applications/${id}`;
+  const loanUrl = `http://localhost:3100/api/v1/staffs/loan_applications/${id}`;
 
+
+  const reviewUrl = `${loanUrl}/review`
+
+ 
   // Fetch the details of the loan with the specified loan_id and display it here
 
   useEffect(() => {
@@ -17,7 +21,7 @@ const ReviewLoanApplication = () => {
 
   const fetchLoanApplication = async () => {
     try {
-      const response = await fetch(url);
+      const response = await fetch(loanUrl);
 
       if (response.ok) {
         const data = await response.json();
@@ -97,7 +101,7 @@ const ReviewLoanApplication = () => {
 
             <h2>Loan Application Review Form</h2>
 
-            <ReviewForm />
+            <ReviewForm loanReviewUrl={reviewUrl}/>
 
           </div>
         )}

@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { FaSpinner } from 'react-icons/fa';
 import '../../assets/styles/LoadingSpinner.css';
 
-const ReviewForm = () => {
+const ReviewForm = (loanReviewUrl) => {
     const [loading, setLoading] = useState(false);
   const [loadingFailure, setLoadingFailure] = useState(false);
 
@@ -21,11 +21,42 @@ const ReviewForm = () => {
       [name]: value,
     });
   };
+  
+  const reviewUrl = loanReviewUrl.loanReviewUrl
 
-  const handleReviewSubmit = (event) => {
+  
+  const handleReviewSubmit =  async (event) => {
     event.preventDefault();
     setLoading(true);
     setLoadingFailure(false);
+
+    
+
+    try {
+        const response = await fetch(reviewUrl, {
+            method: 'PUT',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({reviewedData: formData})
+        } )
+       
+
+        if (response.ok) {
+            console.log(response)
+            window.location.reload()
+        } else {
+            setLoadingFailure(true);
+            setLoading(false);
+        }
+
+
+    } catch (error) {
+        throw new Error(error)
+    }
+
+  
+
     
   };
 
@@ -95,7 +126,6 @@ const ReviewForm = () => {
             placeholder="Enter the Amount to pay back"
             value={formData.amount_to_pay}
             onChange={handleInputChange}
-            required
           />
         </label>
       </div>
@@ -109,16 +139,11 @@ const ReviewForm = () => {
             name="repayment_schedule"
             value={formData.repayment_schedule}
             onChange={handleInputChange}
-            required
           />
         </label>
       </div>
       <button type="submit">Submit Review</button>
          </form>
-
-      
-
-
     </>
 
   );
