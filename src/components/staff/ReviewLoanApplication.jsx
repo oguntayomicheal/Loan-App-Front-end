@@ -1,4 +1,4 @@
-import React, { Component, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import ReviewForm from './ReviewForm';
 
@@ -9,16 +9,9 @@ const ReviewLoanApplication = () => {
   const { id } = useParams();
   const loanUrl = `http://localhost:3100/api/v1/staffs/loan_applications/${id}`;
 
+  const reviewUrl = `${loanUrl}/review`;
 
-  const reviewUrl = `${loanUrl}/review`
-
- 
   // Fetch the details of the loan with the specified loan_id and display it here
-
-  useEffect(() => {
-    fetchLoanApplication();
-  }, []);
-
   const fetchLoanApplication = async () => {
     try {
       const response = await fetch(loanUrl);
@@ -33,10 +26,9 @@ const ReviewLoanApplication = () => {
       throw new Error(error);
     }
   };
-
-  // const handleReviewSubmit = (formData) => {
-  //   console.log(formData)
-  // }
+  useEffect(() => {
+    fetchLoanApplication();
+  }, []);
 
   return (
     <div>
@@ -101,7 +93,7 @@ const ReviewLoanApplication = () => {
 
             <h2>Loan Application Review Form</h2>
 
-            <ReviewForm loanReviewUrl={reviewUrl}/>
+            <ReviewForm loanReviewUrl={reviewUrl} />
 
           </div>
         )}

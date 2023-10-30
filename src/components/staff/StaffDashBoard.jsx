@@ -4,11 +4,6 @@ import './StaffDashBoard.css';
 
 const StaffDashBoard = () => {
   const [loanApplicationsList, setLoanApplicationList] = useState([]);
-
-  useEffect(() => {
-    fetchloanApplicationsList();
-  }, []);
-
   const loanUrl = 'http://localhost:3100/api/v1/staffs/loan_applications';
 
   const fetchloanApplicationsList = async () => {
@@ -21,6 +16,10 @@ const StaffDashBoard = () => {
       setLoanApplicationList(data);
     });
   };
+
+  useEffect(() => {
+    fetchloanApplicationsList();
+  }, []);
 
   return (
     <div id="staffDashBoard">
@@ -42,7 +41,7 @@ const StaffDashBoard = () => {
             </span>
             <span>
               <Link to={`/ReviewLoanApplication/${eachLoan.id}`}>
-                <button>Review</button>
+                <button type="button">Review</button>
               </Link>
 
             </span>
