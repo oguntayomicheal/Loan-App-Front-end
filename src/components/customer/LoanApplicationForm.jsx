@@ -23,7 +23,7 @@ const LoanApplicationForm = () => {
     status: 'IN progress',
     details: 'Not updated yet',
     repayment_schedule: 'Not updated yet',
-    amount_to_pay: 'Not updated yet'
+    amount_to_pay: 'Not updated yet',
   });
 
   const handleInputChange = (event) => {
