@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React, { Component, useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import ReviewForm from './ReviewForm';
 
 const ReviewLoanApplication = () => {
   const [loanDetails, setLoanDetails] = useState({});
@@ -62,6 +63,8 @@ const ReviewLoanApplication = () => {
               </p>
             </article>
 
+            {/* Add form to review loan details */}
+
             {/* current reviwed details */}
             <article>
               <h2>Current review details</h2>
@@ -77,16 +80,20 @@ const ReviewLoanApplication = () => {
                 Details:
                 {loanDetails.details}
               </p>
-              <p>
-                Purpose:
-                {loanDetails.purpose}
-              </p>
+              <pa>
+                Amount to pay back:
+                {loanDetails.amount_to_pay}
+              </pa>
               <p>
                 Repayment Schedule:
                 {loanDetails.repayment_schedule}
               </p>
 
             </article>
+
+            <h2>Loan Application Review Form</h2>
+
+            <ReviewForm />
 
           </div>
         )}
