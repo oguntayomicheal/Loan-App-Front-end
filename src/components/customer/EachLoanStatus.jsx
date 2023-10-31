@@ -27,9 +27,6 @@ const EachLoanStatus = () => {
     fetchLoanApplication();
   }, []);
 
-  const handleGeneratePdf = () => {
-    generatePDF(loanDetails);
-  };
   return (
     <div>
       {serverError ? (
@@ -88,7 +85,7 @@ const EachLoanStatus = () => {
 
             </article>
 
-            <button onClick={handleGeneratePdf} type="button">Download PDF</button>
+            <button onClick={() => { generatePDF(loanDetails); }} type="button">Download PDF</button>
 
           </div>
         )}

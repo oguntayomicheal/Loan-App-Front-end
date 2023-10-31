@@ -2,7 +2,6 @@
 import { jsPDF } from 'jspdf';
 
 const generatePDF = (loanDetails) => {
-  console.log(loanDetails);
   const doc = new jsPDF();
   doc.text('Loan Application Details', 10, 10);
 
@@ -18,6 +17,9 @@ const generatePDF = (loanDetails) => {
   doc.text(`Details: ${loanDetails.details}`, 10, 120);
   doc.text(`Amount to pay back: ${loanDetails.amount_to_pay}`, 10, 130);
   doc.text(`Repayment Schedule: ${loanDetails.repayment_schedule}`, 10, 140);
+
+  doc.text('Staff Signature: LoanAppBanking', 10, 190);
+  doc.text('Customer Signature: ..............', 10, 240);
 
   doc.save('LoanApplicationDetails.pdf');
 };
