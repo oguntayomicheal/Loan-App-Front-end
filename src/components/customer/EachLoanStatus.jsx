@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-
+import generatePDF from '../LoanAgreement';
 
 const EachLoanStatus = () => {
   const [loanDetails, setLoanDetails] = useState({});
@@ -9,7 +9,6 @@ const EachLoanStatus = () => {
   const { id } = useParams();
   const loanUrl = `http://localhost:3100/api/v1/customers/loan_applications/${id}`;
 
-  // Fetch the details of the loan with the specified loan_id and display it here
   const fetchLoanApplication = async () => {
     try {
       const response = await fetch(loanUrl);
@@ -28,6 +27,9 @@ const EachLoanStatus = () => {
     fetchLoanApplication();
   }, []);
 
+  const handleGeneratePdf = () => {
+    generatePDF(loanDetails);
+  };
   return (
     <div>
       {serverError ? (
@@ -61,7 +63,6 @@ const EachLoanStatus = () => {
               </p>
             </article>
 
-
             <article>
               <h2>Current review details</h2>
               <p>
@@ -87,6 +88,7 @@ const EachLoanStatus = () => {
 
             </article>
 
+            <button onClick={handleGeneratePdf} type="button">Download PDF</button>
 
           </div>
         )}

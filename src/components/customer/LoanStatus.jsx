@@ -8,7 +8,6 @@ const LoanStatus = () => {
 
   const loanUrl = `http://localhost:3100/api/v1/customers/${customerId}/loan_applications`;
 
-
   const fetchloanApplicationsList = async () => {
     fetch(loanUrl).then((response) => {
       if (!response.ok) {
