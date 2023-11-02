@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import ReviewForm from './ReviewForm';
+import { Link } from 'react-router-dom';
 
 const ReviewLoanApplication = () => {
   const [loanDetails, setLoanDetails] = useState({});
@@ -39,6 +40,7 @@ const ReviewLoanApplication = () => {
       )
         : (
           <div>
+            <Link to={'/StaffDashBoard'}>Back</Link>
              <div className='loan_details'>
             <article>
               <h2>Loan Details</h2>
