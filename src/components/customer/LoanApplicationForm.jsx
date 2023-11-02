@@ -68,7 +68,7 @@ const LoanApplicationForm = () => {
 
   return (
 
-    <div className='customer_page main_content'>
+    <div className="customer_page main_content">
       <NavLink to="/LoanStatus" className="each_nav">
         Loan status
       </NavLink>

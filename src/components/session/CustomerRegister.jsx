@@ -53,7 +53,7 @@ const CustomerRegister = () => {
         setLoading(false);
       }
     } catch (error) {
-      //   throw new Error(error);
+      throw new Error(error);
     }
   };
 

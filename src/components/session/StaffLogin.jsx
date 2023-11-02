@@ -43,7 +43,7 @@ const StaffLogin = () => {
   };
 
   return (
-    <div className='session_page main_content'>
+    <div className="session_page main_content">
       <h1>Staff Login Page</h1>
 
       <form onSubmit={handleSubmit}>

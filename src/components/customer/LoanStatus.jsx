@@ -24,7 +24,7 @@ const LoanStatus = () => {
   }, []);
 
   return (
-    <div className='loan_status_page'>
+    <div className="loan_status_page">
       <NavLink to="/LoanApplicationForm" className="each_nav">
         Application form
       </NavLink>
