@@ -5,6 +5,7 @@ import { NavLink, useNavigate } from 'react-router-dom';
 import { FaSpinner } from 'react-icons/fa';
 import '../../assets/styles/LoadingSpinner.css';
 import '../../assets/styles/customer.css';
+import LogoutButton from '../LogoutButton';
 
 const LoanApplicationForm = () => {
   const navigate = useNavigate();
@@ -71,6 +72,7 @@ const LoanApplicationForm = () => {
       <NavLink to="/LoanStatus" className="each_nav">
         Loan status
       </NavLink>
+      <LogoutButton />
 
       <div>
         <h2>Loan Application Form</h2>
