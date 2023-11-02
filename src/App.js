@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import './App.css';
-import WelcomePage from './WelcomePage';
+import WelcomePage from './components/WelcomePage';
 import StaffLogin from './components/session/StaffLogin';
 import CustomerRegister from './components/session/CustomerRegister';
 import CustomerLogin from './components/session/CustomerLogin';
