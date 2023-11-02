@@ -1,0 +1,14 @@
+.session_page {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.session_page:hover {
+  border: 1px solid skyblue;
+  border-radius: 20px;
+  padding: 5px;
+}

@@ -1,0 +1,43 @@
+#staffDashBoard {
+  width: 80%;
+  margin: auto;
+}
+
+#allLoans {
+  padding: 10px;
+}
+
+.eachLoan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1%;
+  border-radius: 8px;
+}
+
+.eachLoan:hover {
+  border: 1px solid skyblue;
+}
+
+li {
+  list-style: none;
+}
+
+.staff_page {
+  /* height: 80vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.loan_details {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+#details {
+  height: 50px;
+}

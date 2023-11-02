@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import './StaffDashBoard.css';
+import '../../assets/styles/staff.css';
+import LogoutButton from '../LogoutButton';
 
 const StaffDashBoard = () => {
   const [loanApplicationsList, setLoanApplicationList] = useState([]);
@@ -24,6 +25,7 @@ const StaffDashBoard = () => {
   return (
     <div id="staffDashBoard">
       Staff dashboard
+      <LogoutButton />
       <h2>Loan Applications</h2>
       <ul id="allLoans">
         {loanApplicationsList.map((eachLoan) => (

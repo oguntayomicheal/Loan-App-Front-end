@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import generatePDF from '../LoanAgreement';
 
 const EachLoanStatus = () => {
   const [loanDetails, setLoanDetails] = useState({});
   const [serverError, setServerError] = useState(false);
-  // Use the useParams hook to get the loan loan_loan_id from the URL
+  //  useParams hook to get the loan_id from the URL
   const { id } = useParams();
   const loanUrl = `http://localhost:3100/api/v1/customers/loan_applications/${id}`;
 
@@ -28,7 +28,7 @@ const EachLoanStatus = () => {
   }, []);
 
   return (
-    <div>
+    <div className="customer_page main_content">
       {serverError ? (
         <p>
           Server Error, Please kindly refresh this page
@@ -36,6 +36,7 @@ const EachLoanStatus = () => {
       )
         : (
           <div>
+            <Link to="/LoanStatus" id="back_loan_status">Back</Link>
             <article>
               <h2>Loan Details</h2>
               <p>
@@ -84,8 +85,9 @@ const EachLoanStatus = () => {
               </p>
 
             </article>
-
-            <button onClick={() => { generatePDF(loanDetails); }} type="button">Download PDF</button>
+            Approved?
+            <br />
+            <button onClick={() => { generatePDF(loanDetails); }} type="button">Download Agreement</button>
 
           </div>
         )}
