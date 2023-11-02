@@ -45,7 +45,7 @@ const CustomerLogin = () => {
         const data = await response.json();
         localStorage.setItem('customerData', JSON.stringify(data));
         setLoginSuccess(true);
-        navigate('/CustomerHomePage');
+        navigate('/LoanApplicationForm');
       } else {
         setLoginFailure(true);
         setLoading(false);
