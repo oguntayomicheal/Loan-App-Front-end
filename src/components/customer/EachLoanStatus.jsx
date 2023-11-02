@@ -28,7 +28,7 @@ const EachLoanStatus = () => {
   }, []);
 
   return (
-    <div>
+    <div className='customer_page main_content'>
       {serverError ? (
         <p>
           Server Error, Please kindly refresh this page
@@ -84,8 +84,9 @@ const EachLoanStatus = () => {
               </p>
 
             </article>
-
-            <button onClick={() => { generatePDF(loanDetails); }} type="button">Download PDF</button>
+            Approved?
+            <br />
+            <button onClick={() => { generatePDF(loanDetails); }} type="button">Download Agreement</button>
 
           </div>
         )}

@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 
 import { FaSpinner } from 'react-icons/fa';
 import '../../assets/styles/LoadingSpinner.css';
+import '../../assets/styles/session.css';
 
 const StaffLogin = () => {
   const [staffID, setStaffID] = useState('');

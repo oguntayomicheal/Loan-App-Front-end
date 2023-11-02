@@ -4,6 +4,7 @@ import { NavLink, useNavigate } from 'react-router-dom';
 
 import { FaSpinner } from 'react-icons/fa';
 import '../../assets/styles/LoadingSpinner.css';
+import '../../assets/styles/customer.css';
 
 const LoanApplicationForm = () => {
   const navigate = useNavigate();
@@ -66,7 +67,7 @@ const LoanApplicationForm = () => {
 
   return (
 
-    <>
+    <div className='customer_page main_content'>
       <NavLink to="/LoanStatus" className="each_nav">
         Loan status
       </NavLink>
@@ -77,6 +78,7 @@ const LoanApplicationForm = () => {
           <div className="form-group">
             <label htmlFor="loan_amount">
               Loan Amount ($$)
+              <br />
               <input
                 type="number"
                 id="loan_amount"
@@ -92,6 +94,7 @@ const LoanApplicationForm = () => {
           <div className="form-group">
             <label htmlFor="purpose">
               Loan Purpose
+              <br />
               <input
                 type="textarea"
                 id="purpose"
@@ -106,6 +109,7 @@ const LoanApplicationForm = () => {
           <div className="form-group">
             <label htmlFor="repayment_preferences">
               Repayment Preferences
+              <br />
               <input
                 type="textarea"
                 id="repayment_preferences"
@@ -117,6 +121,7 @@ const LoanApplicationForm = () => {
               />
             </label>
           </div>
+          <br />
           <button type="submit">Submit Application</button>
         </form>
 
@@ -135,7 +140,7 @@ const LoanApplicationForm = () => {
         )}
       </div>
 
-    </>
+    </div>
   );
 };
 
