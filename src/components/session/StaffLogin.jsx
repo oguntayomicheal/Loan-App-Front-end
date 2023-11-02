@@ -42,8 +42,8 @@ const StaffLogin = () => {
   };
 
   return (
-    <>
-      staff page
+    <div className='session_page main_content'>
+      <h1>Staff Login Page</h1>
 
       <form onSubmit={handleSubmit}>
         <input
@@ -75,7 +75,7 @@ const StaffLogin = () => {
       </div>
       )}
 
-    </>
+    </div>
   );
 };
 

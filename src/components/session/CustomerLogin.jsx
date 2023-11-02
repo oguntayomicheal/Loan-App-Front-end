@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 
 import { FaSpinner } from 'react-icons/fa';
 import '../../assets/styles/LoadingSpinner.css';
+import '../../assets/styles/session.css';
 
 const CustomerLogin = () => {
   const [formData, setFormData] = useState({
@@ -55,7 +56,7 @@ const CustomerLogin = () => {
   };
 
   return (
-    <div className="splash_page">
+    <div className="session_page main_content">
       <h2 className="h2_login">Login</h2>
       {loginSuccess ? (
         <div>

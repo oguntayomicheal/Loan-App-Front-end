@@ -57,7 +57,7 @@ const CustomerRegister = () => {
   };
 
   return (
-    <div className="regis_page">
+    <div className="session_page main_content">
       <h2>Register</h2>
       {registrationSuccess ? (
         <div className="reg_success">
@@ -68,6 +68,7 @@ const CustomerRegister = () => {
         <form onSubmit={handleSubmit}>
           <label htmlFor="name">
             Name:
+            <br />
             <input
               id="name"
               type="text"
@@ -86,6 +87,7 @@ const CustomerRegister = () => {
           <br />
           <label htmlFor="email">
             Email:
+            <br />
             <input
               id="email"
               type="email"
@@ -104,6 +106,7 @@ const CustomerRegister = () => {
           <br />
           <label htmlFor="password">
             Password:
+            <br />
             <input
               id="password"
               type="password"
@@ -123,6 +126,7 @@ const CustomerRegister = () => {
           <br />
           <label htmlFor="confirm_password">
             Confirm Password:
+            <br />
             <input
               id="confirm_password"
               type="password"
