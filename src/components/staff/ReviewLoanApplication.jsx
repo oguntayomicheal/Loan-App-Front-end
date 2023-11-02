@@ -31,7 +31,7 @@ const ReviewLoanApplication = () => {
   }, []);
 
   return (
-    <div>
+    <div className='main_content staff_page'>
       {serverError ? (
         <p>
           Server Error, Please kindly refresh this page
@@ -39,6 +39,7 @@ const ReviewLoanApplication = () => {
       )
         : (
           <div>
+             <div className='loan_details'>
             <article>
               <h2>Loan Details</h2>
               <p>
@@ -63,9 +64,6 @@ const ReviewLoanApplication = () => {
               </p>
             </article>
 
-            {/* Add form to review loan details */}
-
-            {/* current reviwed details */}
             <article>
               <h2>Current review details</h2>
               <p>
@@ -90,7 +88,7 @@ const ReviewLoanApplication = () => {
               </p>
 
             </article>
-
+            </div>
             <h2>Loan Application Review Form</h2>
 
             <ReviewForm loanReviewUrl={reviewUrl} />

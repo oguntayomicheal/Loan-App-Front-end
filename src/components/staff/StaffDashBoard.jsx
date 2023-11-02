@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import './StaffDashBoard.css';
+import '../../assets/styles/staff.css';
 
 const StaffDashBoard = () => {
   const [loanApplicationsList, setLoanApplicationList] = useState([]);

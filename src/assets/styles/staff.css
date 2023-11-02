@@ -22,3 +22,22 @@
 li {
   list-style: none;
 }
+
+.staff_page {
+  /* height: 80vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.loan_details {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+#details {
+  height: 50px;
+}

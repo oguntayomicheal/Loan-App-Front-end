@@ -69,6 +69,7 @@ const ReviewForm = ({ loanReviewUrl }) => {
         <div className="form-group">
           <label htmlFor="status">
             Loan Status
+            <br />
             <select
               type="text"
               id="status"
@@ -91,7 +92,7 @@ const ReviewForm = ({ loanReviewUrl }) => {
         <div className="form-group">
           <label htmlFor="details">
             <p>Rejected ?, provide reasons. Approved?, Enter loan terms and conditions</p>
-
+            <br />
             <input
               type="textarea"
               id="details"
@@ -107,6 +108,7 @@ const ReviewForm = ({ loanReviewUrl }) => {
         <div className="form-group">
           <label htmlFor="amount_to_pay">
             Amount to pay
+            <br />
             <input
               type="number"
               id="amount_to_pay"
@@ -121,6 +123,7 @@ const ReviewForm = ({ loanReviewUrl }) => {
         <div className="form-group">
           <label htmlFor="repayment_schedule">
             Repayment Schedule
+            <br />
             <input
               type="date"
               id="repayment_schedule"
