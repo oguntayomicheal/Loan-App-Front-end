@@ -100,3 +100,892 @@ Object {
   "unmount": [Function],
 }
 `;
+
+exports[`Customer loan status page Renders correctly 2`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="customer_page main_content"
+      >
+        <a
+          class="each_nav"
+          href="/LoanStatus"
+        >
+          Loan status
+        </a>
+        <button
+          class="logout_btn"
+          type="button"
+        >
+          Logout
+        </button>
+        <div>
+          <h2>
+            Loan Application Form
+          </h2>
+          <form>
+            <div
+              class="form-group"
+            >
+              <label
+                for="loan_amount"
+              >
+                Loan Amount ($$)
+                <br />
+                <input
+                  id="loan_amount"
+                  name="loan_amount"
+                  placeholder="Enter desired loan amount"
+                  required=""
+                  type="number"
+                  value=""
+                />
+              </label>
+            </div>
+            <div
+              class="form-group"
+            >
+              <label
+                for="purpose"
+              >
+                Loan Purpose
+                <br />
+                <input
+                  id="purpose"
+                  name="purpose"
+                  placeholder="purpose"
+                  required=""
+                  type="textarea"
+                  value=""
+                />
+              </label>
+            </div>
+            <div
+              class="form-group"
+            >
+              <label
+                for="repayment_preferences"
+              >
+                Repayment Preferences
+                <br />
+                <input
+                  id="repayment_preferences"
+                  name="repayment_preferences"
+                  placeholder="Weekly, monthly..."
+                  required=""
+                  type="textarea"
+                  value=""
+                />
+              </label>
+            </div>
+            <br />
+            <button
+              type="submit"
+            >
+              Submit Application
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="customer_page main_content"
+    >
+      <a
+        class="each_nav"
+        href="/LoanStatus"
+      >
+        Loan status
+      </a>
+      <button
+        class="logout_btn"
+        type="button"
+      >
+        Logout
+      </button>
+      <div>
+        <h2>
+          Loan Application Form
+        </h2>
+        <form>
+          <div
+            class="form-group"
+          >
+            <label
+              for="loan_amount"
+            >
+              Loan Amount ($$)
+              <br />
+              <input
+                id="loan_amount"
+                name="loan_amount"
+                placeholder="Enter desired loan amount"
+                required=""
+                type="number"
+                value=""
+              />
+            </label>
+          </div>
+          <div
+            class="form-group"
+          >
+            <label
+              for="purpose"
+            >
+              Loan Purpose
+              <br />
+              <input
+                id="purpose"
+                name="purpose"
+                placeholder="purpose"
+                required=""
+                type="textarea"
+                value=""
+              />
+            </label>
+          </div>
+          <div
+            class="form-group"
+          >
+            <label
+              for="repayment_preferences"
+            >
+              Repayment Preferences
+              <br />
+              <input
+                id="repayment_preferences"
+                name="repayment_preferences"
+                placeholder="Weekly, monthly..."
+                required=""
+                type="textarea"
+                value=""
+              />
+            </label>
+          </div>
+          <br />
+          <button
+            type="submit"
+          >
+            Submit Application
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Customer page Renders application form correctly 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="customer_page main_content"
+      >
+        <a
+          class="each_nav"
+          href="/LoanStatus"
+        >
+          Loan status
+        </a>
+        <button
+          class="logout_btn"
+          type="button"
+        >
+          Logout
+        </button>
+        <div>
+          <h2>
+            Loan Application Form
+          </h2>
+          <form>
+            <div
+              class="form-group"
+            >
+              <label
+                for="loan_amount"
+              >
+                Loan Amount ($$)
+                <br />
+                <input
+                  id="loan_amount"
+                  name="loan_amount"
+                  placeholder="Enter desired loan amount"
+                  required=""
+                  type="number"
+                  value=""
+                />
+              </label>
+            </div>
+            <div
+              class="form-group"
+            >
+              <label
+                for="purpose"
+              >
+                Loan Purpose
+                <br />
+                <input
+                  id="purpose"
+                  name="purpose"
+                  placeholder="purpose"
+                  required=""
+                  type="textarea"
+                  value=""
+                />
+              </label>
+            </div>
+            <div
+              class="form-group"
+            >
+              <label
+                for="repayment_preferences"
+              >
+                Repayment Preferences
+                <br />
+                <input
+                  id="repayment_preferences"
+                  name="repayment_preferences"
+                  placeholder="Weekly, monthly..."
+                  required=""
+                  type="textarea"
+                  value=""
+                />
+              </label>
+            </div>
+            <br />
+            <button
+              type="submit"
+            >
+              Submit Application
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="customer_page main_content"
+    >
+      <a
+        class="each_nav"
+        href="/LoanStatus"
+      >
+        Loan status
+      </a>
+      <button
+        class="logout_btn"
+        type="button"
+      >
+        Logout
+      </button>
+      <div>
+        <h2>
+          Loan Application Form
+        </h2>
+        <form>
+          <div
+            class="form-group"
+          >
+            <label
+              for="loan_amount"
+            >
+              Loan Amount ($$)
+              <br />
+              <input
+                id="loan_amount"
+                name="loan_amount"
+                placeholder="Enter desired loan amount"
+                required=""
+                type="number"
+                value=""
+              />
+            </label>
+          </div>
+          <div
+            class="form-group"
+          >
+            <label
+              for="purpose"
+            >
+              Loan Purpose
+              <br />
+              <input
+                id="purpose"
+                name="purpose"
+                placeholder="purpose"
+                required=""
+                type="textarea"
+                value=""
+              />
+            </label>
+          </div>
+          <div
+            class="form-group"
+          >
+            <label
+              for="repayment_preferences"
+            >
+              Repayment Preferences
+              <br />
+              <input
+                id="repayment_preferences"
+                name="repayment_preferences"
+                placeholder="Weekly, monthly..."
+                required=""
+                type="textarea"
+                value=""
+              />
+            </label>
+          </div>
+          <br />
+          <button
+            type="submit"
+          >
+            Submit Application
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Customer page Renders correctly 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="loan_status_page"
+      >
+        <a
+          class="each_nav"
+          href="/LoanApplicationForm"
+        >
+          Application form
+        </a>
+        <br />
+        <div>
+          <h2>
+            Loan Status
+          </h2>
+          <ul
+            id="allLoans"
+          />
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="loan_status_page"
+    >
+      <a
+        class="each_nav"
+        href="/LoanApplicationForm"
+      >
+        Application form
+      </a>
+      <br />
+      <div>
+        <h2>
+          Loan Status
+        </h2>
+        <ul
+          id="allLoans"
+        />
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Customer page Renders correctly 2`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="customer_page main_content"
+      >
+        <a
+          class="each_nav"
+          href="/LoanStatus"
+        >
+          Loan status
+        </a>
+        <button
+          class="logout_btn"
+          type="button"
+        >
+          Logout
+        </button>
+        <div>
+          <h2>
+            Loan Application Form
+          </h2>
+          <form>
+            <div
+              class="form-group"
+            >
+              <label
+                for="loan_amount"
+              >
+                Loan Amount ($$)
+                <br />
+                <input
+                  id="loan_amount"
+                  name="loan_amount"
+                  placeholder="Enter desired loan amount"
+                  required=""
+                  type="number"
+                  value=""
+                />
+              </label>
+            </div>
+            <div
+              class="form-group"
+            >
+              <label
+                for="purpose"
+              >
+                Loan Purpose
+                <br />
+                <input
+                  id="purpose"
+                  name="purpose"
+                  placeholder="purpose"
+                  required=""
+                  type="textarea"
+                  value=""
+                />
+              </label>
+            </div>
+            <div
+              class="form-group"
+            >
+              <label
+                for="repayment_preferences"
+              >
+                Repayment Preferences
+                <br />
+                <input
+                  id="repayment_preferences"
+                  name="repayment_preferences"
+                  placeholder="Weekly, monthly..."
+                  required=""
+                  type="textarea"
+                  value=""
+                />
+              </label>
+            </div>
+            <br />
+            <button
+              type="submit"
+            >
+              Submit Application
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="customer_page main_content"
+    >
+      <a
+        class="each_nav"
+        href="/LoanStatus"
+      >
+        Loan status
+      </a>
+      <button
+        class="logout_btn"
+        type="button"
+      >
+        Logout
+      </button>
+      <div>
+        <h2>
+          Loan Application Form
+        </h2>
+        <form>
+          <div
+            class="form-group"
+          >
+            <label
+              for="loan_amount"
+            >
+              Loan Amount ($$)
+              <br />
+              <input
+                id="loan_amount"
+                name="loan_amount"
+                placeholder="Enter desired loan amount"
+                required=""
+                type="number"
+                value=""
+              />
+            </label>
+          </div>
+          <div
+            class="form-group"
+          >
+            <label
+              for="purpose"
+            >
+              Loan Purpose
+              <br />
+              <input
+                id="purpose"
+                name="purpose"
+                placeholder="purpose"
+                required=""
+                type="textarea"
+                value=""
+              />
+            </label>
+          </div>
+          <div
+            class="form-group"
+          >
+            <label
+              for="repayment_preferences"
+            >
+              Repayment Preferences
+              <br />
+              <input
+                id="repayment_preferences"
+                name="repayment_preferences"
+                placeholder="Weekly, monthly..."
+                required=""
+                type="textarea"
+                value=""
+              />
+            </label>
+          </div>
+          <br />
+          <button
+            type="submit"
+          >
+            Submit Application
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Customer page Renders loan status correctly 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="loan_status_page"
+      >
+        <a
+          class="each_nav"
+          href="/LoanApplicationForm"
+        >
+          Application form
+        </a>
+        <br />
+        <div>
+          <h2>
+            Loan Status
+          </h2>
+          <ul
+            id="allLoans"
+          />
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="loan_status_page"
+    >
+      <a
+        class="each_nav"
+        href="/LoanApplicationForm"
+      >
+        Application form
+      </a>
+      <br />
+      <div>
+        <h2>
+          Loan Status
+        </h2>
+        <ul
+          id="allLoans"
+        />
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
