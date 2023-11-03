@@ -10,14 +10,13 @@ const LoanStatus = () => {
 
   const fetchloanApplicationsList = async () => {
     try {
-      const response = await fetch(loanUrl)
+      const response = await fetch(loanUrl);
       if (response.ok) {
-        const data = await response.json()
+        const data = await response.json();
         setLoanApplicationList(data);
       }
-    }
-    catch (error) {
-      throw new Error(error)
+    } catch (error) {
+      throw new Error(error);
     }
   };
 
