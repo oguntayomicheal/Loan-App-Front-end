@@ -9,14 +9,16 @@ const LoanStatus = () => {
   const loanUrl = `http://localhost:3100/api/v1/customers/${customerId}/loan_applications`;
 
   const fetchloanApplicationsList = async () => {
-    fetch(loanUrl).then((response) => {
-      if (!response.ok) {
-        throw new Error('Network response not OK');
+    try {
+      const response = await fetch(loanUrl)
+      if (response.ok) {
+        const data = await response.json()
+        setLoanApplicationList(data);
       }
-      return response.json();
-    }).then((data) => {
-      setLoanApplicationList(data);
-    });
+    }
+    catch (error) {
+      throw new Error(error)
+    }
   };
 
   useEffect(() => {
