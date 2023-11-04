@@ -3,7 +3,7 @@
 <a name="readme-top"></a>
 
 # 📗 Table of Contents
-- [Doctor\_appointment\_reservation\_front\_end](#doctor_appointment_reservation_front_end)
+- [📖 Loan Application Frontend ](#Loan_Application_Frontend)
 - [📗 Table of Contents](#-table-of-contents)
 - [📖 \[Appointment\_booker\_front\_end\] ](#-appointment_booker_front_end-)
   - [Link to the back-end repo](#link-to-the-back-end-repo)
