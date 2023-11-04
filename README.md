@@ -23,10 +23,11 @@
   - [🙏Acknowledgments ](#acknowledgments-)
   - [📝 License ](#-license-)
 
-# 📖 [React template] <a name="about-project"></a>
+# 📖 Loan Application Frontend Repository <a name="about-project"></a>
 
-**[Appointment_booker_front_end]** is a frontend react template repo to quickly get started on a project or take home assignments
-## [Link to the back-end repo](https://github.com/)
+> This repository contains the frontend code for the Loan Application web application. It's built using React and provides a user-friendly interface for customers to apply for loans, view loan status, and staff to review and manage loan applications. The README includes instructions for setting up the development environment, running the application, and contributing to the project.
+
+## [Link to the back-end repo](https://github.com/oguntayomicheal/Loan-App-Backend)
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -40,17 +41,37 @@
 </details>
 
 <details>
-  <summary>Redux</summary>
+  <summary>JavaScript</summary>
   <ul>
-    <li><a>https://redux.js.org/</a></li>
+    <li><a>https://developer.mozilla.org/en-US/docs/Web/JavaScript
+</a></li>
+  </ul>
+</details>
+
+<details>
+  <summary>Fetch-API</summary>
+  <ul>
+    <li><a>https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API</a></li>
   </ul>
 </details>
 
 ### Key Features <a name="key-features"></a>
 
-- **[ ]**
+##### **Loan Officer (Staff)**
+- Staff Login with unique ID
+- Staff dashboard to view all Loan applications
+- Review Loan applications and 
+- Update loan application status
+
+##### **Customer**
+- Register a new account
+- Login to an existing account
+- Apply for loans through loan application forms
+- View loan applicaitons status
+- Download loan agreement 
 
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -64,16 +85,16 @@ In order to run this project you need a web browser.
 
 Clone this repository to your desired folder:
 
-```
-  git clone https://github.com/
-  cd .....
+```sh
+  git clone git@github.com:oguntayomicheal/Loan-App-Front-end.git
+  cd Loan-App-Front-end
 ```
 
 ### Install
 
 Install this project with:
 
-```
+```sh
   npm install
 ```
 
@@ -81,7 +102,7 @@ Install this project with:
 
 To run the project, execute the following command:
 
-```
+```sh
   npm start
 ```
 
@@ -89,14 +110,14 @@ To run the project, execute the following command:
 
 To run tests, run the following command:
 
-```
+```sh
 npm test
 ```
+```sh
+  npx eslint "**/*.{js,jsx}" 
 ```
-  npx eslint "**/*.{js,jsx}" --fix
-```
-```
-  npx stylelint "**/*.{css,scss}" --fix
+```sh
+  npx stylelint "**/*.{css,scss}" 
 ```
 
 
@@ -111,13 +132,14 @@ npm test
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [] **[ ]**
+- **Allow customer to delete rejected loan applications**
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
-Feel free to check the [issues page](https://github.com/ /issues).
+Feel free to check the [issues page](https://github.com/oguntayomicheal/Loan-App-Front-end/issues).
 
 ## ⭐️ Show your support <a name="support"></a>
 
