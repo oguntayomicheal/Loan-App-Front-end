@@ -147,8 +147,7 @@ If you like this project please show support by staring :star:️.
 
 
 ## 🙏Acknowledgments <a name="acknowledgements"></a>
-
-
+- I would like to express my gratitude to [02techconsulting](https://www.02herotechconsulting.com/) for providing the project requirements and making this project possible.
 
 ## 📝 License <a name="license"></a>
 
