@@ -1,11 +1,9 @@
-# React template
+
 
 <a name="readme-top"></a>
 
 # 📗 Table of Contents
-- [📖 Loan Application Frontend ](#Loan_Application_Frontend)
-- [📗 Table of Contents](#-table-of-contents)
-- [📖 \[Appointment\_booker\_front\_end\] ](#-appointment_booker_front_end-)
+- [📖 Loan Application Frontend ](#about-project)
   - [Link to the back-end repo](#link-to-the-back-end-repo)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
