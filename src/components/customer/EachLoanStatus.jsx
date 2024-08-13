@@ -7,7 +7,9 @@ const EachLoanStatus = () => {
   const [serverError, setServerError] = useState(false);
   //  useParams hook to get the loan_id from the URL
   const { id } = useParams();
-  const loanUrl = `http://localhost:3100/api/v1/customers/loan_applications/${id}`;
+  // const loanUrl = `http://localhost:3100/api/v1/customers/loan_applications/${id}`;
+
+  const loanUrl = `  ${process.env.REACT_APP_BACKEND_DEPLOYMENT_URL}/api/v1/customers/loan_applications/${id}`;
 
   const fetchLoanApplication = async () => {
     try {

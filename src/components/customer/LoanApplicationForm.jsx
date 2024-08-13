@@ -36,7 +36,8 @@ const LoanApplicationForm = () => {
     });
   };
 
-  const url = 'http://127.0.0.1:3100/api/v1/customers';
+  // const url = 'http://127.0.0.1:3100/api/v1/customers';
+  const url = `${process.env.REACT_APP_BACKEND_DEPLOYMENT_URL}/api/v1/customers`;
 
   const loanUrl = `${url}/loan_applications`;
 

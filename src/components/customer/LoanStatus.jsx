@@ -6,7 +6,9 @@ const LoanStatus = () => {
   const customerData = localStorage.getItem('customerData');
   const customerId = (JSON.parse(customerData)).id;
 
-  const loanUrl = `http://localhost:3100/api/v1/customers/${customerId}/loan_applications`;
+  // const loanUrl = `http://localhost:3100/api/v1/customers/${customerId}/loan_applications`;
+
+  const loanUrl = `${process.env.REACT_APP_BACKEND_DEPLOYMENT_URL}/api/v1/customers/${customerId}/loan_applications`;
 
   const fetchloanApplicationsList = async () => {
     try {

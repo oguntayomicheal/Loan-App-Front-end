@@ -18,8 +18,10 @@ const StaffLogin = () => {
     setLoading(true);
     setLoginFailure(false);
 
-    const url = 'http://127.0.0.1:3100/api/v1/staffs/login';
-
+    // const urlOld = 'http://127.0.0.1:3100/api/v1/staffs/login';
+    const url = `${process.env.REACT_APP_BACKEND_DEPLOYMENT_URL}/api/v1/staffs/login`;
+    console.log(url)
+    
     try {
       const response = await fetch(url, {
         method: 'POST',
@@ -64,16 +66,16 @@ const StaffLogin = () => {
 
       {loading && (
 
-      <div className="loading-spinner">
-        <FaSpinner className="icon" />
-      </div>
+        <div className="loading-spinner">
+          <FaSpinner className="icon" />
+        </div>
 
       )}
 
       {loginFailure && (
-      <div>
-        Invalid Staff ID
-      </div>
+        <div>
+          Invalid Staff ID
+        </div>
       )}
 
     </div>

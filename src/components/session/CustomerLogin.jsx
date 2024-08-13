@@ -26,7 +26,9 @@ const CustomerLogin = () => {
     }));
   };
 
-  const url = 'http://127.0.0.1:3100/api/v1/customers/sign_in';
+  // const url = 'http://127.0.0.1:3100/api/v1/customers/sign_in';
+  const url = `${process.env.REACT_APP_BACKEND_DEPLOYMENT_URL}/api/v1/customers/sign_in`;
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);

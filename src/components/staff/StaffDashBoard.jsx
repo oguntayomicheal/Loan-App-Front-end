@@ -5,7 +5,9 @@ import LogoutButton from '../LogoutButton';
 
 const StaffDashBoard = () => {
   const [loanApplicationsList, setLoanApplicationList] = useState([]);
-  const loanUrl = 'http://localhost:3100/api/v1/staffs/loan_applications';
+  // const loanUrl = 'http://localhost:3100/api/v1/staffs/loan_applications';
+
+  const loanUrl = `${process.env.REACT_APP_BACKEND_DEPLOYMENT_URL}/api/v1/staffs/loan_applications`;
 
   const fetchloanApplicationsList = async () => {
     fetch(loanUrl).then((response) => {
