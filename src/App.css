@@ -5,6 +5,7 @@ button {
 .main_content {
   width: 60%;
   margin: auto;
+  margin-top: 3%;
 }
 
 a {
@@ -23,15 +24,20 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 50px;
-}
-
-.welcome_links {
-  column-gap: 10px;
-}
-
-#welcome_page:hover {
+  gap: 40px;
   border: 1px solid skyblue;
   border-radius: 20px;
   padding: 5px;
+}
+
+.welcome_links {
+  /* column-gap: 60px; */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#welcome_page:hover {
+  border: 2px solid skyblue;
+ 
 }
